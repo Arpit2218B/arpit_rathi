@@ -1,7 +1,9 @@
+import styles from '../styles/Home.module.scss';
+
 export default function Home() {
   return (
-    <div>
-      <h1>Coming soon</h1>
+    <div className={styles.comingsoon}>
+      <h1 className={styles['coming-soon']}>Coming soon 😌</h1>
     </div>
   )
 }
