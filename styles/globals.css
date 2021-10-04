@@ -27,3 +27,7 @@ a {
   margin: 0;
   padding: 0;
 }
+
+.green-text {
+  color: var(--accent-color);
+}

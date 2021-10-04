@@ -1,0 +1,48 @@
+.hero__container {
+    max-width: 70vh;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+
+    .salutation {
+        font-size: 1rem;
+    }
+
+    * {
+        margin-bottom: 1rem;
+    }
+
+    .name {
+        color: var(--primary-text-color);
+        font-size: clamp(3rem, 10vw, 5rem);
+        font-weight: 500;
+    }
+
+    .title {
+        color: var(--secondary-text-color);
+        font-size: clamp(1.4rem, 8vw, 3.8rem);
+        font-weight: 400;
+    }
+
+    .description {
+        color: var(--secondary-text-color);
+        font-size: clamp(1rem, 4vw, 1.4rem);
+        font-weight: 200;
+        line-height: clamp(1.5rem, 4vh, 2rem);
+        margin-bottom: 2rem;
+    }
+
+    .check__work {
+        border: 1px solid var(--accent-color);
+        border-radius: 2px;
+        padding: 0.8rem 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero__container {
+        top: 15%;
+        left: 0;
+        padding: 24px;
+    }
+}
