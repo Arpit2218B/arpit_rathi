@@ -1,10 +1,11 @@
 import styles from '../styles/Contact.module.scss';
 import Layout from './Layout';
+import StyledHeading from './StyledHeading';
 
 const Contact = () => {
     return (
         <Layout id="contact">
-            <h1>Contact page - Coming soon 😌</h1>
+            <StyledHeading>Contact</StyledHeading>
         </Layout>
     )
 }

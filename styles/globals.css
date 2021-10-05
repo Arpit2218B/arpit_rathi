@@ -29,5 +29,34 @@ a {
 }
 
 .green-text {
-  color: var(--accent-color);
+  color: var(--accent-color) !important;
+}
+
+.heading {
+  color: var(--primary-text-color);
+  font-size: clamp(1rem, 3vh, 2rem);
+  font-weight: 400;
+  display: flex;
+  margin: 24px 0 48px 0;
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 15px;
+  width: 300px;
+  height: 1pt;
+  margin-left: 10px;
+  background-color: var(--primary-text-color);
+}
+
+ul {
+  list-style: '👉  ';
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    padding: 36px;
+  }
 }

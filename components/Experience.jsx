@@ -1,10 +1,11 @@
 import styles from '../styles/Experience.module.scss';
 import Layout from './Layout';
+import StyledHeading from './StyledHeading';
 
 const Experience = () => {
     return (
         <Layout id="experience">
-            <h1>Experience page - Coming soon 😌</h1>
+            <StyledHeading>Experience</StyledHeading>
         </Layout>
     )
 }

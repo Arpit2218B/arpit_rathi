@@ -1,10 +1,11 @@
 import styles from '../styles/FeaturedWork.module.scss';
 import Layout from './Layout';
+import StyledHeading from './StyledHeading';
 
 const FeaturedWork = () => {
     return (
         <Layout id="featuredwork">
-            <h1>Featured Work page - Coming soon 😌</h1>
+            <StyledHeading>Featured work</StyledHeading>
         </Layout>
     )
 }

@@ -7,9 +7,14 @@ import Navbar from '../components/Navbar';
 import Projects from '../components/Projects';
 import styles from '../styles/Home.module.scss';
 
+import Head from 'next/head';
+
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Arpit Rathi</title>
+      </Head>
       {/* <Navbar /> */}
       <Hero />
       <About />
