@@ -33,11 +33,11 @@ const ProjectCard = () => {
                 <FolderOutlined style={{color: "64FFDA"}} fontSize="large" />
                 <GitHub style={{color: "64FFDA", cursor: "pointer"}} />
             </div>
-            <h3 className={styles.heading}>My project</h3>
+            <h3 className={styles.heading}>Integrating Algolia Search with WordPress Multisite</h3>
             <p className={styles.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, nostrum atque perferendis id repellat architecto ad ex porro incidunt officia ab fugit in facere. Quidem ipsam similique eligendi praesentium soluta numquam, inventore itaque sit deserunt quaerat, ab accusamus minus veniam!</p>
             <div className={styles.tags__container}>
                 <span className={styles.tags}>React Js</span>
-                <span className={styles.tags}>Node Js</span>
+                <span className={styles.tags}>SCSS</span>
                 <span className={styles.tags}>Firebase</span>
             </div>
         </div>
