@@ -34,7 +34,7 @@ const ProjectCard = () => {
                 <GitHub style={{color: "64FFDA", cursor: "pointer"}} />
             </div>
             <h3 className={styles.heading}>Integrating Algolia Search with WordPress Multisite</h3>
-            <p className={styles.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, nostrum atque perferendis id repellat architecto ad ex porro incidunt officia ab fugit in facere. Quidem ipsam similique eligendi praesentium soluta numquam, inventore itaque sit deserunt quaerat, ab accusamus minus veniam!</p>
+            <p className={styles.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, nostrum atque perferendis id repellat architecto ad ex porro incidunt officia ab fugit in facere. Quidem ipsam similique eligendi praesentium.</p>
             <div className={styles.tags__container}>
                 <span className={styles.tags}>React Js</span>
                 <span className={styles.tags}>SCSS</span>
