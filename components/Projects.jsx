@@ -48,3 +48,4 @@ const ProjectCard = ({ data }) => {
 }
 
 export default Projects
+
