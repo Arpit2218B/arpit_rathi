@@ -1,33 +1,41 @@
 import { useState } from 'react';
 import styles from '../styles/Experience.module.scss';
+import { workExperience } from '../utils/data';
 import Layout from './Layout';
 import StyledHeading from './StyledHeading';
 
 const Experience = () => {
 
-    const [experience, setExperience] = useState('Commvault');
+    const [experience, setExperience] = useState(workExperience[0].name);
 
     return (
         <Layout id="experience">
             <StyledHeading>Experience</StyledHeading>
-            <div className={styles.experience}>
-                <ExperienceTabs setExperience={setExperience} />
-                <ExperienceDetails experience={experience} />
-            </div>
+                <div className={styles.experience}>
+                    <ExperienceTabs setExperience={setExperience} />
+                    {workExperience.map(ex => ex.name == experience ? (
+                        <ExperienceDetails experience={ex} />
+                    ) : null)}
+                </div>
         </Layout>
     )
 }
 
-const ExperienceDetails = ({ position, experience, from, to, description, tech }) => {
+const ExperienceDetails = ({ experience }) => {
+    const { position, name, from, to, description, tech } = experience;
+
     return (
         <div className={styles.details__container}>
-            <h3 className={styles.position__experience}>Position @ {experience}</h3>
-            <p className={styles.text}>2017 to 2019</p>
-            <p className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odit fugit vel tenetur voluptatum nisi magni, inventore quas ipsum ut quasi incidunt accusamus animi excepturi at, saepe ab ratione eveniet error voluptas voluptatem. Nesciunt voluptatem dolor voluptate cumque laborum magnam?</p>
+            <h3 className={styles.position__experience}>{position} @ {name}</h3>
+            <p className={styles.text}>{from} to {to}</p>
+            <p className={styles.text}>{description}</p>
             <p className={styles.text}>Technologies worked on</p>
             <ul className={styles.text}>
-                <li>React Js</li>
-                <li>Next Js</li>
+                {
+                    tech.map(t => (
+                        <li key={t}>{t}</li>
+                    ))
+                }
             </ul>
         </div>
     )
@@ -36,11 +44,9 @@ const ExperienceDetails = ({ position, experience, from, to, description, tech }
 const ExperienceTabs = ({ setExperience }) => {
     return (
         <div className={styles.tabs__container}>
-            <span className={styles.tab} onClick={() => setExperience('Commvault')}>Commvault</span>
-            <span className={styles.tab} onClick={() => setExperience('Kristal AI')}>Kristal AI</span>
-            <span className={styles.tab} onClick={() => setExperience('Comfest')}>Comfest</span>
-            <span className={styles.tab} onClick={() => setExperience('Position D')}>Position D</span>
-            <span className={styles.tab} onClick={() => setExperience('Position E')}>Position E</span>
+            {workExperience.map(exp => (
+                <span className={styles.tab} onClick={() => setExperience(exp.name)}>{exp.name}</span>
+            ))}
         </div>
     )
 }
