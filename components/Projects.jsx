@@ -36,8 +36,13 @@ const ProjectCard = ({ data }) => {
                 <FolderOutlined style={{color: "64FFDA"}} fontSize="large" />
                 <a href={data.externalURL.github}><GitHub style={{color: "64FFDA", cursor: "pointer"}} /></a>
             </div>
+<<<<<<< HEAD
             <h3 className={styles.heading}>{data.name}</h3>
             <p className={styles.description}>{data.description}</p>
+=======
+            <h3 className={styles.heading}>Integrating Algolia Search with WordPress Multisite</h3>
+            <p className={styles.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, nostrum atque perferendis id repellat architecto ad ex porro incidunt officia ab fugit in facere. Quidem ipsam similique eligendi praesentium.</p>
+>>>>>>> 46a6a6fc19688982711ed428b37a86916f62362c
             <div className={styles.tags__container}>
                 {data.technology.map(tech => (
                     <span key={tech} className={styles.tags}>{tech}</span>
