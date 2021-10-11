@@ -14,7 +14,7 @@ const Experience = () => {
                 <div className={styles.experience}>
                     <ExperienceTabs setExperience={setExperience} />
                     {workExperience.map(ex => ex.name == experience ? (
-                        <ExperienceDetails experience={ex} />
+                        <ExperienceDetails key={ex.name} experience={ex} />
                     ) : null)}
                 </div>
         </Layout>
@@ -45,7 +45,7 @@ const ExperienceTabs = ({ setExperience }) => {
     return (
         <div className={styles.tabs__container}>
             {workExperience.map(exp => (
-                <span className={styles.tab} onClick={() => setExperience(exp.name)}>{exp.name}</span>
+                <span key={exp.name} className={styles.tab} onClick={() => setExperience(exp.name)}>{exp.name}</span>
             ))}
         </div>
     )
