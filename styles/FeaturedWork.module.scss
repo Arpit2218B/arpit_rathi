@@ -61,8 +61,10 @@
     }
 }
 
-@media screen and (min-width: 812px) {   
-    .right {
+@media screen and (min-width: 812px) {
+
+
+    .featured__work:nth-child(even) {
         flex-direction: row-reverse;
         
         .image__container {
