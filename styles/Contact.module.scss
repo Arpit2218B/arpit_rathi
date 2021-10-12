@@ -10,7 +10,7 @@
             background-color: var(--secondary-text-color);
             padding: 1rem;
             border: none;
-            border-radius: 4px;
+            border-radius: 2px;
             margin-bottom: 1rem;
             color: var(--secondary-color);
             outline-color: var(--primary-color);
@@ -22,6 +22,7 @@
 
         .textarea {
             height: 150px;
+            resize: none;
         }
 
         .button {
@@ -30,7 +31,7 @@
             border: none;
             border-radius: 4px;
             margin: 1rem 0;
-            color: var(--secondary-text-color);
+            color: var(--primary-text-color);
             font-size: 1.2rem;
             font-weight: 600;
             cursor: pointer;
@@ -59,6 +60,7 @@
         flex-direction: column;
 
         .icons {
+            justify-content: space-between;
             * {
                 font-size: 2rem;
             }

@@ -5,7 +5,8 @@ import StyledHeading from './StyledHeading';
 
 const Contact = () => {
     return (
-        <Layout id="contact">
+        <Layout id="contact" fitContent={true}>
+            <>
             <StyledHeading>Contact</StyledHeading>
             <div className={styles.container}>
                 <div className={styles.form}>
@@ -20,6 +21,7 @@ const Contact = () => {
                     <Twitter />
                 </div>
             </div>
+            </>
         </Layout>
     )
 }

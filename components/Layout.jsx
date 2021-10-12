@@ -1,8 +1,8 @@
 import styles from '../styles/Layout.module.scss';
 
-const Layout = ({ id, children }) => {
+const Layout = ({ id, fitContent, children }) => {
     return (
-        <div id={id} className={styles.container}>
+        <div id={id} className={fitContent ? `${styles.container} ${styles.fitContent}` : `${styles.container}`}>
             {children}
         </div>
     )

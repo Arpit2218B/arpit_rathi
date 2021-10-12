@@ -10,7 +10,7 @@ const FeaturedWork = () => {
         <Layout id="featuredwork">
             <StyledHeading>Featured work</StyledHeading>
             {projects.map(project => project.featureWork ? (
-                <FeaturedWorkData key={project.name} data={project} />
+                <FeaturedWorkData key={project.name} data={project}/>
             ) : null)}
         </Layout>
     )

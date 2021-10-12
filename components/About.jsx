@@ -28,7 +28,7 @@ const About = () => {
                     </ul>
                 </div>
                 <div className={styles.right__section}>
-                    <img className={styles.image} src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/60576840e7d265198541a372_bavassano_homepage_gp.jpg"></img>
+                    <img className={styles.image} src="profile.jpg"></img>
                 </div>
             </div>
         </Layout>
