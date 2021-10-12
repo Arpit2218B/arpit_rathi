@@ -15,7 +15,7 @@ export default function Home() {
       <Head>
         <title>Arpit Rathi</title>
       </Head>
-      {/* <Navbar /> */}
+      <Navbar />
       <Hero />
       <About />
       <Experience />

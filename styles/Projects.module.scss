@@ -67,3 +67,9 @@
         grid-template-columns: 1fr;
     }
 }
+
+@media screen and (max-width: 800px) {
+    .projects__grid {
+        grid-template-columns: 2fr;
+    }
+}

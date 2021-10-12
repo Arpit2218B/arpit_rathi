@@ -55,6 +55,34 @@ export const projects = [
             'tech3'
         ]
     },
+    {
+        name: 'Project5',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sed at consectetur est accusamus rerum! Asperiores odio distinctio error impedit dolorum, ut consequatur cupiditate explicabo numquam obcaecati provident maxime nihil vitae.',
+        featureWork: false,
+        externalURL: {
+            github: '#',
+            hosting: '#'
+        },
+        technology: [
+            'tech1',
+            'tech2',
+            'tech3'
+        ]
+    },
+    {
+        name: 'Project6',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sed at consectetur est accusamus rerum! Asperiores odio distinctio error impedit dolorum, ut consequatur cupiditate explicabo numquam obcaecati provident maxime nihil vitae.',
+        featureWork: false,
+        externalURL: {
+            github: '#',
+            hosting: '#'
+        },
+        technology: [
+            'tech1',
+            'tech2',
+            'tech3'
+        ]
+    },
 ]
 
 export const workExperience = [
